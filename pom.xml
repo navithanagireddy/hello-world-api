@@ -34,8 +34,6 @@
 				 <server>${server}</server>
 				  <uri>http://anypoint.mulesoft.com</uri>
 				  <muleversion>${app.runtime}</muleversion>
-				  <username>${anypoint.username}</username>
-				  <password>${anypoint.password}</password>
 				  <environment>${env}</environment>
 				  <applicationName>${app.name}</applicationName>
 				  <businessGroup>${business}</businessGroup>
