@@ -11,15 +11,12 @@ trigger:
   paths:
     exclude:
     - azure-pipelines.yml
-    - azure-pipelines-TagnRelease.yml
-    - azure-pipelines-deploy.yml
-    - azure-pipelines-deploy-prod.yml
     - pom.xml
 
 pool:
   vmImage: 'ubuntu-latest'
 variables:
-- group: Azure-Variable-Group
+- group: Build-Variable-Group
 - name: MAVEN_CACHE_FOLDER
   value: $(Pipeline.Workspace)/.m2/repository
 - name: MAVEN_OPTS
